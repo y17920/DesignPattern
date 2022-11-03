@@ -5,10 +5,11 @@ public class Singleton {
     private Singleton() {
 
     }
+
     private static Singleton singleton;
 
     public synchronized static Singleton getSingleton() {
-        if (singleton == null){
+        if (singleton == null) {
             singleton = new Singleton();
         }
         return singleton;
